@@ -260,7 +260,7 @@ footer .footer-credits > a {
 # MEDIA
 --------------------------------------------------------------*/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
 
     .preview .preview-bg {
         right: -48.5%;
