@@ -74,7 +74,7 @@ p {
 
 .preview .preview__logo {
     margin-bottom: 76px;
-    display: block;
+    display: table;
 }
 
 .preview .preview__header {
