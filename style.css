@@ -132,6 +132,15 @@ p {
     margin-bottom: 30px;
 }
 
+.preview .preview__buttons-group > a {
+    display: inline-block;
+    transition: 135ms ease-in-out;
+}
+
+.preview .preview__buttons-group > a:hover{
+    transform: translateY(-3px);
+}
+
 .preview .preview__button-download {
     display: table;
     font-weight: bold;
