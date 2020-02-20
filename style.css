@@ -177,7 +177,7 @@ p {
 .steps .steps__card > img {
     position: absolute;
     right: -8px;
-    top: 1px;
+    bottom: 0;
 }
 
 .steps .steps__card > .steps__card-body {
@@ -260,6 +260,12 @@ footer .footer-credits > a {
 # MEDIA
 --------------------------------------------------------------*/
 
+@media only screen and (max-width: 1280px) and (min-width: 1200px) {
+    .steps .steps__card .steps__card-content {
+        padding-right: 15px;
+    }
+}
+
 @media screen and (max-width: 1199px) {
 
     .preview .preview-bg {
@@ -269,7 +275,16 @@ footer .footer-credits > a {
     .preview .preview__header > p:last-of-type:after {
         right: -65px;
     }
+}
 
+@media screen and (max-width: 1198px) and (min-width: 991px) {
+    .steps .steps__card {
+        height: 359px;
+    }
+
+    .steps .steps__card > img {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 991px) {
