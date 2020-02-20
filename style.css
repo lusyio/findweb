@@ -383,6 +383,18 @@ footer .footer-credits > a {
 
 }
 
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .steps .steps__card .steps__card-title {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    .steps .steps__card .steps__card-content {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     section {
