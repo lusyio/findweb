@@ -1,0 +1,495 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Regular.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+    url('fonts/Gilroy-Regular.eot') format('embedded-opentype'),
+    url('fonts/Gilroy-Regular.woff') format('woff'),
+    url('fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Bold.eot');
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+    url('fonts/Gilroy-Bold.eot') format('embedded-opentype'),
+    url('fonts/Gilroy-Bold.woff') format('woff'),
+    url('fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+    url('fonts/Gilroy-Medium.eot') format('embedded-opentype'),
+    url('fonts/Gilroy-Medium.woff') format('woff'),
+    url('fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+html {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+}
+
+html img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+p {
+    margin-block-start: 0;
+}
+
+/*--------------------------------------------------------------
+# PREVIEW
+--------------------------------------------------------------*/
+
+.preview .preview-bg {
+    position: absolute;
+    right: -34.5%;
+    max-width: 130%;
+    top: -6.5%;
+}
+
+.preview {
+    /*background: url('img/bg-preview.png') right no-repeat;*/
+    /*background-size: contain;*/
+    padding-top: 39px;
+    padding-bottom: 55px;
+}
+
+.preview .container {
+    position: relative;
+}
+
+.preview .preview__logo {
+    margin-bottom: 76px;
+    display: block;
+}
+
+.preview .preview__header {
+    margin-bottom: 13px;
+}
+
+.preview .preview__phone-img {
+    padding-top: 20px;
+}
+
+.preview .preview__instagram {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    z-index: 5;
+}
+
+.preview .preview__header > p {
+    font-weight: bold;
+    font-size: 4.125rem;
+    line-height: 5.125rem;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.preview .preview__header > p:last-of-type {
+    color: #0088FF;
+    position: relative;
+}
+
+.preview .preview__header > p:last-of-type:after {
+    content: url('svg/svg-blueheart.svg');
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    display: block;
+}
+
+.preview .preview__info {
+    font-size: 18px;
+    line-height: 21px;
+    color: #767676;
+    margin-bottom: 90px;
+}
+
+.preview .preview__buttons-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.preview .preview__button-download {
+    display: table;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #0088FF;
+}
+
+.preview .preview__button-download > img {
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+/*--------------------------------------------------------------
+# STEPS
+--------------------------------------------------------------*/
+
+.steps {
+    background: #F3F5F6;
+    padding-top: 110px;
+    padding-bottom: 86px;
+    position: relative;
+}
+
+.steps .steps__header {
+    font-weight: bold;
+    font-size: 3.25rem;
+    line-height: 4rem;
+    color: #000000;
+    padding-right: 35px;
+    margin-top: -15px;
+}
+
+.steps .steps__header > span {
+    color: #0088FF;
+}
+
+.steps .steps__card {
+    background: #FFFFFF;
+    box-shadow: 0 0 15px rgba(0, 136, 255, 0.35);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    height: 319px;
+}
+
+.steps .steps__card > img {
+    position: absolute;
+    right: -8px;
+    top: 1px;
+}
+
+.steps .steps__card > .steps__card-body {
+    padding: 116px 200px 90px 31px;
+}
+
+.steps .steps__card .steps__card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    color: #000000;
+    margin-bottom: 17px;
+}
+
+.steps .steps__card .steps__card-title > span {
+    color: #0088FF;
+}
+
+.steps .steps__card .steps__card-content {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    color: #767676;
+    margin-bottom: 0;
+}
+
+.steps .steps__card.last {
+    background: #0088FF;
+}
+
+.steps .steps__card.last .steps__card-title {
+    color: #FFFFFF;
+}
+
+.steps .steps__card.last .steps__card-content {
+    color: #FFFFFF;
+}
+
+/*--------------------------------------------------------------
+# FOOTER
+--------------------------------------------------------------*/
+
+footer {
+    padding-top: 0;
+    padding-bottom: 44px;
+    background: #F3F5F6;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-links > a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #767676;
+    display: block;
+    margin: 0;
+    text-decoration: none;
+}
+
+footer .footer-credits {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C4C4C4;
+    text-align: right;
+}
+
+footer .footer-credits > a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C4C4C4;
+    text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+# MEDIA
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 1200px) {
+
+    .preview .preview-bg {
+        right: -48.5%;
+    }
+
+    .preview .preview__header > p:last-of-type:after {
+        right: -65px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .preview .preview-bg {
+        display: none;
+    }
+
+    .preview {
+        padding-top: 39px;
+        background: url('img/bg-previewMobile.png') bottom no-repeat;
+        background-size: contain;
+    }
+
+    .preview .preview__logo {
+        margin-bottom: 67px;
+    }
+
+    .preview .preview__info {
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 84px;
+    }
+
+    .preview .preview__buttons-group {
+        display: block;
+        margin-bottom: 61px;
+    }
+
+    .preview .preview__buttons-group a {
+        display: table;
+    }
+
+    .preview .preview__buttons-group a > img {
+        width: 250px;
+    }
+
+    .preview .preview__buttons-group a:first-of-type {
+        margin-bottom: 27px;
+    }
+
+    .preview .preview__buttons-group a:first-of-type > img {
+        width: 280px;
+    }
+
+    .preview .preview__button-download > img {
+        width: 60px;
+        margin-right: 30px;
+    }
+
+    .preview .preview__button-download {
+        font-size: 22px;
+        line-height: 27px;
+        margin-bottom: 52px;
+    }
+
+    .preview .preview__header > p:last-of-type:after {
+        display: none;
+        content: none;
+    }
+
+    .preview .preview__instagram {
+        right: 15px;
+    }
+
+    .preview__instagram > svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .preview__instagram > svg > path {
+        fill: #0088FF;
+    }
+
+    footer .footer-links {
+        display: block;
+    }
+
+    footer .footer-links > a {
+        display: table;
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+    footer .footer-credits {
+        margin-top: 15px;
+        text-align: left;
+        font-size: 22px;
+        line-height: 40px;
+        margin-bottom: 0;
+    }
+
+    footer .footer-credits a {
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .steps {
+        padding-top: 83px;
+        padding-bottom: 5px;
+    }
+
+    .steps .steps__header {
+        margin-bottom: 65px;
+    }
+
+    .steps .steps__card > .steps__card-body {
+        padding: 116px 40% 85px 30px;
+        height: 100%;
+    }
+
+    .steps .steps__card .steps__card-title {
+        margin-bottom: 18px;
+    }
+
+    .steps .steps__card .steps__card-content {
+    }
+
+    footer {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    .steps .steps__card .steps__card-title {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    .steps .steps__card .steps__card-content {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .steps .steps__card > .steps__card-body {
+        padding-right: 36%;
+    }
+
+    .steps .steps__card.last .steps__card-content {
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    footer .footer-links > a, footer .footer-credits a, footer .footer-credits {
+        font-size: 20px;
+    }
+
+    .steps .steps__card {
+        height: auto;
+    }
+
+    .steps .steps__header {
+        padding-right: 0;
+    }
+
+    .steps .steps__card > .steps__card-body {
+        padding: 30px 30px 0 30px;
+        height: auto;
+    }
+
+    .steps .steps__card > img {
+        position: relative;
+        display: block;
+        margin: auto;
+    }
+}
+
+/*--------------------------------------------------------------
+## Notebook
+--------------------------------------------------------------*/
+@media only screen and (max-width: 1280px) {
+    html {
+        font-size: 95%;
+    }
+}
+
+/*--------------------------------------------------------------
+## Netbook
+--------------------------------------------------------------*/
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+/*--------------------------------------------------------------
+## iPad
+--------------------------------------------------------------*/
+@media only screen and (max-width: 960px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+/*--------------------------------------------------------------
+## iPad
+--------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+/*--------------------------------------------------------------
+## iPad
+--------------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 75%;
+    }
+}
+
