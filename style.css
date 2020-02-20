@@ -446,6 +446,19 @@ footer .footer-credits > a {
         display: block;
         margin: auto;
     }
+
+    .preview .preview__button-download {
+        display: flex;
+        align-items: center;
+    }
+
+    .steps .steps__card .steps__card-title {
+        font-size: 1.8rem;
+    }
+
+    .steps .steps__card .steps__card-content {
+        font-size: 1.225rem;
+    }
 }
 
 /*--------------------------------------------------------------
