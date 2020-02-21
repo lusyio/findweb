@@ -83,6 +83,12 @@ p {
 
 .preview .preview__phone-img {
     padding-top: 20px;
+    transition: 0.2s;
+}
+
+.preview .preview__phone-img:hover {
+    transform: scale(1.03);
+	transition: 0.2s;
 }
 
 .preview .preview__instagram {
