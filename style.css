@@ -191,12 +191,19 @@ p {
     margin-bottom: 30px;
     position: relative;
     height: 319px;
+    transition: 0.2s;
+}
+
+.steps .steps__card:hover {
+	transform: scale(1.03);
+	transition: 0.2s;
 }
 
 .steps .steps__card > img {
     position: absolute;
     right: -8px;
     bottom: 0;
+    max-width: 250px;
 }
 
 .steps .steps__card > .steps__card-body {
@@ -495,6 +502,7 @@ footer .footer-credits > a {
         position: relative;
         display: block;
         margin: auto;
+        max-width: 260px;
     }
 
     .preview .preview__button-download {
