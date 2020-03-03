@@ -525,6 +525,13 @@ footer .footer-credits > a {
     }
 }
 
+@media screen and (max-width: 320px) {
+    .preview .preview__header > p{
+        font-size: 3.125rem;
+        line-height: 4.125rem;
+    }
+}
+
 /*--------------------------------------------------------------
 ## Notebook
 --------------------------------------------------------------*/
