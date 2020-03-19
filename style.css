@@ -491,6 +491,10 @@ footer .footer-credits > a {
         font-size: 20px;
     }
 
+    .preview .preview__header > p{
+        font-size: 3.625rem;
+    }
+
     .steps .steps__card {
         height: auto;
     }
