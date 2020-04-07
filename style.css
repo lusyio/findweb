@@ -88,7 +88,7 @@ p {
 
 .preview .preview__phone-img:hover {
     transform: scale(1.03);
-	transition: 0.2s;
+    transition: 0.2s;
 }
 
 .preview .preview__instagram {
@@ -143,7 +143,7 @@ p {
     transition: 135ms ease-in-out;
 }
 
-.preview .preview__buttons-group > a:hover{
+.preview .preview__buttons-group > a:hover {
     transform: translateY(-3px);
 }
 
@@ -201,8 +201,8 @@ p {
 }
 
 .steps .steps__card:hover {
-	transform: scale(1.03);
-	transition: 0.2s;
+    transform: scale(1.03);
+    transition: 0.2s;
 }
 
 .steps .steps__card > img {
@@ -304,6 +304,10 @@ footer .footer-credits > a {
 
 @media screen and (max-width: 1199px) {
 
+    .preview .preview__buttons-group > a:not(:last-of-type) {
+        margin-right: 20px;
+    }
+
     .preview .preview-bg {
         right: -48.5%;
     }
@@ -324,6 +328,11 @@ footer .footer-credits > a {
 }
 
 @media screen and (max-width: 991px) {
+
+    .preview .preview__buttons-group {
+        justify-content: unset;
+    }
+
     .preview .preview-bg {
         display: none;
     }
@@ -345,20 +354,17 @@ footer .footer-credits > a {
     }
 
     .preview .preview__buttons-group {
-        display: block;
+        display: flex;
         margin-bottom: 61px;
     }
 
-    .preview .preview__buttons-group a {
+    .preview .preview__buttons-group a:not(:last-of-type) {
         display: table;
+        margin-right: 30px;
     }
 
     .preview .preview__buttons-group a > img {
         width: 250px;
-    }
-
-    .preview .preview__buttons-group a:first-of-type {
-        margin-bottom: 27px;
     }
 
     .preview .preview__buttons-group a:first-of-type > img {
@@ -377,8 +383,9 @@ footer .footer-credits > a {
     }
 
     .preview .preview__header > p:last-of-type:after {
-        display: none;
-        content: none;
+        right: -10px;
+        position: relative;
+        display: inline-block;
     }
 
     .preview .preview__instagram {
@@ -491,7 +498,11 @@ footer .footer-credits > a {
         font-size: 20px;
     }
 
-    .preview .preview__header > p{
+    .preview .preview__buttons-group {
+        margin-bottom: 28px;
+    }
+
+    .preview .preview__header > p {
         font-size: 3.625rem;
     }
 
@@ -530,9 +541,15 @@ footer .footer-credits > a {
 }
 
 @media screen and (max-width: 320px) {
-    .preview .preview__header > p{
-        font-size: 3.125rem;
-        line-height: 4.125rem;
+
+    .preview .preview__buttons-group a:not(:last-of-type) {
+        display: table;
+        margin-right: 10px;
+    }
+
+    .preview .preview__header > p {
+        font-size: 2.9rem;
+        line-height: 3.9rem;
     }
 }
 
