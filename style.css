@@ -359,16 +359,16 @@ footer .footer-credits > a {
     }
 
     .preview .preview__buttons-group a:not(:last-of-type) {
-        display: table;
+        display: block;
         margin-right: 30px;
     }
 
-    .preview .preview__buttons-group a > img {
-        width: 250px;
+    .preview .preview__buttons-group > a{
+        display: block;
     }
 
     .preview .preview__buttons-group a:first-of-type > img {
-        width: 280px;
+        /*max-width: 280px;*/
     }
 
     .preview .preview__button-download > img {
@@ -543,7 +543,7 @@ footer .footer-credits > a {
 @media screen and (max-width: 320px) {
 
     .preview .preview__buttons-group a:not(:last-of-type) {
-        display: table;
+        display: block;
         margin-right: 10px;
     }
 
