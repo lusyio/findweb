@@ -329,6 +329,10 @@ footer .footer-credits > a {
 
 @media screen and (max-width: 991px) {
 
+    .preview .preview__buttons-group > a:hover {
+        transform: none;
+    }
+
     .preview .preview__buttons-group {
         justify-content: unset;
     }
